@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Welcome!</h2>
+<p>Welcome to the Brewery app. This is the home page. Leave a review for your most recent brewery visit or feel free to browse for the next brewery to check out!
+    <ul>
+        <li><a href="{{ url_for('read')}}">most recent reviews</a></li>
+        <li><a href="{{ url_for('create')}}">leave a review</a></li>
+    </ul>
+</p>
+{% endblock %}
