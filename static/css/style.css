@@ -1,0 +1,48 @@
+.container {
+  border: 10px double;
+  width: 50%;
+  margin: 0 auto;
+  color: #B22222;
+}
+
+body {
+  background-color:#F0F0F0;
+}
+
+header,
+footer,
+main {
+  padding: 20px;
+  color:black;
+}
+
+
+header,
+main {
+  border-bottom: 2px dotted;
+  margin-bottom: 5px;
+  color: #DAA520;
+}
+
+p.post {
+  font-size: 12px;
+  
+}
+
+footer {
+  margin-bottom: 5px;
+}
+
+html {
+  font-family: noto sans jp, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+
+img {
+  border-radius: 8px;
+}
