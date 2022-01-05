@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <img src="images/eviltwin.png" alt="Evil Twin Brewing" width="100" height="100">
+  <img src="images/bluepoint.png" alt="Blue Point Brewing Company" width="100" height="100">
+  <img src="images/gulfstream.png" alt="Gulf Stream Brewing Company" width="100" height="100">
+  <head>
+    <title>Brewery Review App</title>
+    
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Brewery Review App</h1>
+        <p>
+          <a href="{{ url_for('home')}}">Home</a> |
+          <a href="{{ url_for('read')}}">All reviews</a> |
+          <a href="{{ url_for('create')}}">Leave a review</a>
+        </p>
+      </header>
+      <main>{% block container %} {% endblock %}</main>
+      <footer>
+        <p>
+          The source code for this app is
+          <a href="https://github.com/dbdesign-students-fall2021/web-app-hle80201"
+            >available on Github</a
+          >.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <img src="images/brooklynbrewery.png" alt="Brooklyn Brewery" width="100" height="100">
+  <img src="images/otherhalf.png" alt="Other Half Brewing Company" width="100" height="100">
+  <img src="images/3sons.jfif" alt="3 Sons Brewing Co" width="100" height="100">
+</html>
