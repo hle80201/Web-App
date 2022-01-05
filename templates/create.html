@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block container %}
+<h2>Create</h2>
+<p>Did you enjoy your trip? Did anything stand out at this particular brewery - drinks or atmosphere?.</p>
+<form method="POST" action="{{ url_for('create_post') }}">
+  <p>Your name: <input type="text" id="fname" name="fname" /><br /></p>
+  <p>Your email: <input type="text" id="femail" name="femail" /><br /></p>
+  <p>Brewery name: <input type="text" id="fbrewery" name="fbrewery" /><br /></p>
+  <p>
+    Message:
+    <textarea type="text" id="fmessage" name="fmessage"></textarea>
+  </p>
+  <p>
+    <a href="{{ url_for('read')}}">Cancel</a>
+    <input type="submit" name="post-btn" value="Post" />
+  </p>
+</form>
+{% endblock %}
